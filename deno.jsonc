@@ -2,9 +2,7 @@
   "name": "@vim-fall/extra",
   "version": "0.0.0",
   "exports": {
-    ".": "./mod.ts",
-    "./matcher": "./matcher/mod.ts",
-    "./matcher/kensaku": "./matcher/kensaku.ts"
+    ".": "./mod.ts"
   },
   "publish": {
     "include": [
