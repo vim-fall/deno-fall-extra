@@ -2,7 +2,13 @@
   "name": "@vim-fall/extra",
   "version": "0.0.0",
   "exports": {
-    ".": "./mod.ts"
+    ".": "./mod.ts",
+    "./action": "./action/mod.ts",
+    "./action/mr-delete": "./action/mr_delete.ts",
+    "./matcher": "./matcher/mod.ts",
+    "./matcher/kensaku": "./matcher/kensaku.ts",
+    "./source": "./source/mod.ts",
+    "./source/mr": "./source/mr.ts"
   },
   "publish": {
     "include": [
