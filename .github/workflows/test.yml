@@ -119,14 +119,14 @@ jobs:
         run: deno task test:coverage
         timeout-minutes: 15
 
-      - run: |
-          deno task coverage --lcov > coverage.lcov
-
-      - uses: codecov/codecov-action@v4
-        with:
-          os: ${{ runner.os }}
-          files: ./coverage.lcov
-          token: ${{ secrets.CODECOV_TOKEN }}
+      # - run: |
+      #     deno task coverage --lcov > coverage.lcov
+      #
+      # - uses: codecov/codecov-action@v4
+      #   with:
+      #     os: ${{ runner.os }}
+      #     files: ./coverage.lcov
+      #     token: ${{ secrets.CODECOV_TOKEN }}
 
   jsr-publish:
     runs-on: ubuntu-latest
