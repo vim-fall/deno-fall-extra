@@ -7,6 +7,10 @@
     "./action/mr-delete": "./action/mr_delete.ts",
     "./matcher": "./matcher/mod.ts",
     "./matcher/kensaku": "./matcher/kensaku.ts",
+    "./renderer": "./renderer/mod.ts",
+    "./renderer/devicons": "./renderer/devicons.ts",
+    "./renderer/nerdfont": "./renderer/nerdfont.ts",
+    "./renderer/nvim-web-devicons": "./renderer/nvim_web_devicons.ts",
     "./source": "./source/mod.ts",
     "./source/mr": "./source/mr.ts"
   },
@@ -40,6 +44,7 @@
   "imports": {
     "@denops/std": "jsr:@denops/std@^7.3.0",
     "@std/assert": "jsr:@std/assert@^1.0.7",
+    "@std/collections": "jsr:@std/collections@^1.0.9",
     "@std/fs": "jsr:@std/fs@^1.0.5",
     "@std/jsonc": "jsr:@std/jsonc@^1.0.1",
     "@std/path": "jsr:@std/path@^1.0.8",
