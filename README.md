@@ -1,5 +1,7 @@
 # 🍂 fall-extra
 
+[![JSR](https://jsr.io/badges/@vim-fall/extra)](https://jsr.io/@vim-fall/extra)
+[![Test](https://github.com/vim-fall/fall-extra/actions/workflows/test.yml/badge.svg)](https://github.com/vim-fall/fall-extra/actions/workflows/test.yml)
 [![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
 Extra library for using [Fall](https://github.com/vim-fall/fall), a Vim/Neovim
