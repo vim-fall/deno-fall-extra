@@ -12,7 +12,7 @@ import { defineMatcher, type Matcher } from "@vim-fall/std/matcher";
  * @template T The type of items being matched.
  * @returns A matcher function that performs the search and highlights matching portions.
  */
-export function kensaku<T>(): Matcher<T> {
+export function kensaku(): Matcher {
   return defineMatcher(async function* (denops, { query, items }, { signal }) {
     // Split the query into individual terms, transform them using `vim-kensaku`,
     // and create regex patterns from them.

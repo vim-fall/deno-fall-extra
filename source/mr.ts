@@ -1,10 +1,6 @@
 import type { Denops } from "@denops/std";
 import { defineSource, type Source } from "@vim-fall/std/source";
 
-// MR (Most Recently Used, Written, Repositories, Directories) type options
-type MrType = "mru" | "mrw" | "mrr" | "mrd";
-
-// Detail type that represents the file path
 type Detail = {
   path: string;
   mr: {
@@ -12,8 +8,16 @@ type Detail = {
   };
 };
 
+export type MrOptions = {
+  /** MR (Most Recently Used, Written, Repositories, Directories) type options */
+  type?: MrType;
+};
+
+// MR (Most Recently Used, Written, Repositories, Directories) type options
+type MrType = "mru" | "mrw" | "mrr" | "mrd";
+
 // This function defines a source for MRU/MRW/MRR/MRD files using the vim-mr plugin
-export function mr(options: { type?: MrType } = {}): Source<Detail> {
+export function mr(options: MrOptions = {}): Source<Detail> {
   const type = options.type ?? "mru"; // Default to MRU files
   return defineSource(async function* (denops) {
     let id = 0;

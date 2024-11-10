@@ -1,16 +1,15 @@
 import type { Denops } from "@denops/std";
 import { type Action, defineAction } from "@vim-fall/std/action";
 
-// MR (Most Recently Used, Written, Repositories, Directories) type options
-type MrType = "mru" | "mrw" | "mrr" | "mrd";
-
-// Detail type that represents the file path
 type Detail = {
   path: string;
   mr: {
     type: MrType;
   };
 };
+
+// MR (Most Recently Used, Written, Repositories, Directories) type options
+type MrType = "mru" | "mrw" | "mrr" | "mrd";
 
 /**
  * Deletes a file from the MR (Most Recently Used, Written, Repositories, or Directories) list.
