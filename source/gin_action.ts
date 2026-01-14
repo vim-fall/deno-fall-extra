@@ -3,7 +3,7 @@ import { type RawString, rawString as r } from "@denops/std/eval/string";
 import { enumerate } from "@core/iterutil/enumerate";
 import { defineSource, type Source } from "@vim-fall/std/source";
 
-export type Detail = {
+type Detail = {
   gin: { actionKey: RawString };
 };
 

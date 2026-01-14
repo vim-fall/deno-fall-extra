@@ -1,7 +1,11 @@
 import { useEval } from "@denops/std/eval/use-eval";
 import { feedkeys } from "@denops/std/function";
+import type { RawString } from "@denops/std/eval/string";
 import { type Action, defineAction } from "@vim-fall/std/action";
-import type { Detail } from "@vim-fall/extra/source/gin-action";
+
+type Detail = {
+  gin: { actionKey: RawString };
+};
 
 /**
  * Execute a gin action on the current vim-gin's buffer.
