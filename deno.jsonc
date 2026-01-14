@@ -4,6 +4,7 @@
   "exports": {
     ".": "./mod.ts",
     "./action": "./action/mod.ts",
+    "./action/fern-action-execute": "./action/fern_action_execute.ts",
     "./action/gin-action-execute": "./action/gin_action_execute.ts",
     "./action/mr-delete": "./action/mr_delete.ts",
     "./matcher": "./matcher/mod.ts",
@@ -13,6 +14,7 @@
     "./renderer/nerdfont": "./renderer/nerdfont.ts",
     "./renderer/nvim-web-devicons": "./renderer/nvim_web_devicons.ts",
     "./source": "./source/mod.ts",
+    "./source/fern-action": "./source/fern_action.ts",
     "./source/gin-action": "./source/gin_action.ts",
     "./source/mr": "./source/mr.ts"
   },
