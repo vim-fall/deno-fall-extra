@@ -4,6 +4,7 @@
   "exports": {
     ".": "./mod.ts",
     "./action": "./action/mod.ts",
+    "./action/gin-action-execute": "./action/gin_action_execute.ts",
     "./action/mr-delete": "./action/mr_delete.ts",
     "./matcher": "./matcher/mod.ts",
     "./matcher/kensaku": "./matcher/kensaku.ts",
@@ -12,6 +13,7 @@
     "./renderer/nerdfont": "./renderer/nerdfont.ts",
     "./renderer/nvim-web-devicons": "./renderer/nvim_web_devicons.ts",
     "./source": "./source/mod.ts",
+    "./source/gin-action": "./source/gin_action.ts",
     "./source/mr": "./source/mr.ts"
   },
   "publish": {
@@ -42,6 +44,7 @@
     "update:commit": "deno task -q update --commit --prefix :package: --pre-commit=fmt,lint"
   },
   "imports": {
+    "@core/iterutil": "jsr:@core/iterutil@^0.9.0",
     "@denops/std": "jsr:@denops/std@^7.3.0",
     "@std/assert": "jsr:@std/assert@^1.0.7",
     "@std/collections": "jsr:@std/collections@^1.0.9",
